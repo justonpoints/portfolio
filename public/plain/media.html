@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Juston Points</title>
+
+	<style>
+
+		body{
+			text-align: center;
+			background-color: blanchedalmond;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 18px;
+		}
+
+		.content{
+			text-align:left;
+			padding:10px;
+			background-color: seashell;
+		}
+
+		.button-link{
+			text-decoration: none;
+			background-color: black;
+			color:ghostwhite;
+			font-size: 18px;
+			display: block;
+			padding: 1em 1.5em;
+			min-width: 250px;
+			border-radius: 10px;
+		}
+
+		.avatar{
+			width:150px;
+			border-radius: 50%;
+		}
+
+		.one{order:2;flex-grow:1}
+		.two{order:1;width:100%;}
+		.three{order:3;width: 100%;}
+		.four{order:34}
+
+		@media only screen 
+		and (max-width: 729px) 
+		{
+			body { background-color:lightcoral;}
+		}
+
+		@media only screen 
+		and (min-width: 730px) 
+		{
+			body { background-color:lightskyblue; }
+		}
+
+		@media only screen and (min-width: 1000px) 
+		{
+			body { 
+				background-color:lightseagreen; 
+				flex-direction: row;
+				flex-flow: wrap;
+			}
+			.one{order:1;flex-grow:1;width:80%;text-align:left;padding-left: 10px;}
+			.two{order:3;width:300px;padding: 10px;}
+			.three{order:4;flex-grow:1;width:500px;}
+			.four{order:2;width:18%}
+			.button-link{
+				min-width:150px;
+			}
+			.avatar{
+				width:300px;
+				border-radius: 0px;
+			}
+			.content{height:300px}
+		}
+		
+
+		
+
+		
+	</style>
+
+</head>
+<body>
+		<div class="two">
+			<img class="avatar" src="/img/juston-hello.png" alt="Juston Points"/>
+		</div>
+		<div class="one">
+			<h1 class="title">Juston Points</h1>
+		</div>
+		<div class="three">
+			<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id rutrum velit. Etiam quis pharetra lacus, id imperdiet mi. Etiam lectus urna, pretium accumsan arcu nec, rhoncus ullamcorper neque. Maecenas ullamcorper imperdiet tellus quis iaculis. Aenean auctor lectus sit amet nisl egestas blandit. Aliquam commodo eu nibh vel bibendum. Nam nec libero lacinia, rutrum nunc in, egestas velit. Proin auctor mauris id massa ultricies semper. Nulla bibendum, leo nec facilisis tempor, odio mauris faucibus turpis, quis ullamcorper nisi eros ut orci. Donec blandit lacus ut finibus gravida. Aenean eu gravida dolor. Pellentesque leo dolor, ultricies facilisis elit et, accumsan interdum sem. Suspendisse tempus lectus tellus, a fermentum augue facilisis sed. Maecenas non velit purus. Quisque molestie augue eget auctor egestas. Morbi imperdiet in arcu ac euismod.</p>
+		</div>
+		<div class="four">
+			<a class="button-link" href="/">VISIT</a>
+		</div>
+</body>
+</html>

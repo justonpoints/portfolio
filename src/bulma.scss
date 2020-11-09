@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+
+// Set your brand colors
+//$purple: #8A4D76;
+//$green:#ffffff;
+//$pink: #FA7C91;
+//$brown: #757763;
+//$beige-light: #D0D1CD;
+//$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: Verdana, Geneva, sans-serif;
+//$grey-dark: $brown;
+//$grey-light: $beige-light;
+$primary: #325050;
+$info: #b45032;
+//$link: $pink;
+//$widescreen-enabled: false;
+//$fullhd-enabled: true;
+
+// Update some of Bulma's component variables
+$body-background-color: #f5ffff;
+//$control-border-width: 2px;
+////$input-shadow: none;
+
+//footer
+//$footer-background-color:#000000;
+//$footer-color:#FFFFFF;
+//$footer-padding:3rem;
+
+.shadow{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.09), 0 3px 3px rgba(0,0,0,0.13);
+}
+
+//@import "../node_modules/bulma/sass/bulma.sass";
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+body {
+  font-size:16px;
+  padding: 10px;
+  background-color:#f5ffff;
+}
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
